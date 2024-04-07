@@ -502,7 +502,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Stores all the hyperparameters for the model.")
 
     # Define command-line arguments
-    parser.add_argument("-wp", "--wandb_project", help="Project name used to track experiments in Weights & Biases dashboard", type=str, default="Deep_Learning_A2")  # Project name for Weights & Biases
+    parser.add_argument("-wp", "--wandb_project", help="Project name used to track experiments in Weights & Biases dashboard", type=str, default="ASSIGN_2_DL")  # Project name for Weights & Biases
     parser.add_argument("-we", "--wandb_entity", help="Wandb Entity used to track experiments in the Weights & Biases dashboard", type=str, default="cs23m030")  # Wandb Entity
     parser.add_argument("-lg", "--logger", help="Log to wandb or not", action="store_true")  # Option to log to Weights & Biases
     parser.add_argument("--num_filter", "-nf", nargs="+", type=int, default=[64, 64, 64, 64, 64], help="List of numbers of filters in the CNN layers")  # Number of filters in each CNN layer

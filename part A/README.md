@@ -19,7 +19,10 @@ For the experiments in Part A, the following hyperparameters were used:
 
 ## Code for Part A
 
-The experiments for Part A can be found [here](link_to_experiments).
+The experiments for Part A can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part A/Part_A_CS23M030.ipynb).
+
+## Running the `train_a.py` Script
+The train_a.py for Part A can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part A/train_a.py).
 
 ## Running the `train_a.py` Script
 

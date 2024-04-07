@@ -390,7 +390,7 @@ if __name__ == "__main__":
     # Create an ArgumentParser object with a description
     parser = argparse.ArgumentParser(description="Stores all the hyperparameters for the model.")
     # Add argument for specifying Wandb project name
-    parser.add_argument("-wp", "--wandb_project", help="Project name used to track experiments in Weights & Biases dashboard", type=str, default="Deep_Learning_A2")
+    parser.add_argument("-wp", "--wandb_project", help="Project name used to track experiments in Weights & Biases dashboard", type=str, default="ASSIGN_2_DL")
     # Add argument for specifying Wandb entity
     parser.add_argument("-we", "--wandb_entity", help="Wandb Entity used to track experiments in the Weights & Biases dashboard", type=str, default="cs23m030")
     # Add argument for enabling logging to Wandb

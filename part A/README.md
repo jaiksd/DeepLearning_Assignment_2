@@ -1,35 +1,3 @@
-# CS6910: Assignment-2
-## Problem Statement
-Learn how to use CNNs: train from scratch and finetune a pre-trained model as it is.
-
-## Prerequisites
-
-```
-python 3.9
-numpy 1.21.5
-pytorch
-wget
-```
- - Clone/download  this repository
- - I have conducted all my experiments in Google Collab, for running in google colab, install wandb and wget(for importing dataset) using following command 
- - Enable GPU on colab for faster training
- 
-  ``` 
-  !pip install wandb 
-  !pip install wget
-  !pip install timm(for EfficinetNetV2)
-  ```
- - For running locally, install wandb and other required libraries using following command  
-  ``` 
-  pip install wandb
-  pip install numpy
-  pip install pytorch
-  pip install timm(for EfficinetNetV2)
-  ```
-
-## Dataset
-- We use [iNaturalist](https://storage.googleapis.com/wandb_datasets/nature_12K.zip) dataset for our experiments.
-
 # Part A
 ### Hyperparameters used in experiments for Part A
 |Sr. no| Hyperparameter| Variation/values used|
@@ -51,6 +19,34 @@ wget
 ###  Code for Part A
 
 The experiments for Part A can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part%20A/Part_A_CS23M030.ipynb).
+### Running the train_a.py:
+For running train_a.py, please install the necessary libraries and execute the script with appropriate arguments.
+
+Here is the list of arguments that the parser is taking:
+parser.add_argument("-wp", "--wandb_project", help="Project name used to track experiments in Weights & Biases dashboard", type=str, default="Deep_Learning_A2")  # Project name for Weights & Biases
+parser.add_argument("-we", "--wandb_entity", help="Wandb Entity used to track experiments in the Weights & Biases dashboard", type=str, default="cs23m030")  # Wandb Entity
+parser.add_argument("-lg", "--logger", help="Log to wandb or not", action="store_true")  # Option to log to Weights & Biases
+parser.add_argument("--num_filter", "-nf", nargs="+", type=int, default=[64, 64, 64, 64, 64], help="List of numbers of filters in the CNN layers")  # Number of filters in each CNN layer
+parser.add_argument("--kernel_dimensions", "-kd", nargs="+", type=int, default=[3, 3, 3, 3, 3], help="List of dimensions of the kernels in the CNN layers")  # Kernel dimensions for each CNN layer
+parser.add_argument("--conv_activation", "-ca", type=str, default="mish", help="Activation function for the convolutional layers")  # Activation function for convolutional layers
+parser.add_argument("--enable_data_aug", "-da", action="store_true", help="Enable data augmentation")  # Option to enable data augmentation
+parser.add_argument("--use_batch_normalization", "-bn", action="store_true", help="Use batch normalization")  # Option to use batch normalization
+parser.add_argument("--dropout_probability", "-dp", type=float, default=0.1, help="Dropout probability for fully connected layers")  # Dropout probability for fully connected layers
+parser.add_argument("--hidden_layer_size", "-hs", type=int, default=256, help="Size of the hidden layer in the fully connected layers")  # Size of the hidden layer
+parser.add_argument("--fully_connected_activation", "-fa", type=str, default="mish", help="Activation function for the fully connected layers")  # Activation function for fully connected layers
+parser.add_argument("--strideLength", "-sl", type=int, default=2, help="Stride length for max pooling")  # Stride length for max pooling
+parser.add_argument("--maximum_training_epochs", "-me", type=int, default=10, help="Maximum number of training epochs")  # Maximum number of training epochs
+parser.add_argument("--sweep", action="store_true", help="Perform hyperparameter tuning using wandb sweeps")  # Option to perform hyperparameter tuning
+
+
+### Input Format
+
+You can give input through the command line by executing the Python script and passing arguments with the specified flags. For example:
+ python train_a.py --num_filter 64 64 64 64 64 --kernel_dimensions 3 3 3 3 3 --conv_activation mish --enable_data_aug --use_batch_normalization --dropout_probability 0.1 --  hidden_layer_size 256 --fully_connected_activation mish --strideLength 2 --maximum_training_epochs 10 --sweep
+or simply:
+ python train_a.py
+
+
 
 # Part B
 ### Hyperparameters used in experiments for Part B

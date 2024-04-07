@@ -29,3 +29,7 @@ wget
 
 ## Dataset
 - We use [iNaturalist](https://storage.googleapis.com/wandb_datasets/nature_12K.zip) dataset for our experiments.
+
+## Parts
+There are two folder part A and part B:
+I have added separate readme inside both folders

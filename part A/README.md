@@ -50,7 +50,7 @@ wget
 
 ###  Code for Part A
 
-The experiments for Part A can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-A.ipynb).
+The experiments for Part A can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part%20A/Part_A_CS23M030.ipynb).
 
 # Part B
 ### Hyperparameters used in experiments for Part B

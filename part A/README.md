@@ -34,14 +34,19 @@ wget
 ### Hyperparameters used in experiments for Part A
 |Sr. no| Hyperparameter| Variation/values used|
 |------|---------------|-----------------|
-|1.| Activation function| ReLu,GeLU,SiLu, Elu|
-|2.| Num_filters| [256,256,256,256,256],[128,128,128,128,128],[64,128,256,512,1024],[64,64, 64,64,64]|
-|3.| Kernel size| [3,3,3,5,5],[5,5,5,5,5],[3,3,3,3,3]|
-|4.| Drop_out| 0.2,0.4 |
-|5.| Batch_norm| True, False |
-|6.| Data augmentation| True, False |
 
-- Note: I have used ADAM optimizer with 0.0003 learning rate and beta1=0.93 for the above experiments
+|1.| Fully Connected Activation | Mish, ReLU, SiLU, GeLU |
+|2.| Stride Length | 2, 3, 5 |
+|3.| Enable Data Augmentation | True, False |
+|4.| Number of Filters | [32, 32, 32, 32, 32], [64, 64, 64, 64, 64], [512, 256, 128, 64, 32], [32, 64, 128, 256, 512] |
+|5.| Convolutional Activation | Mish, ReLU, SiLU, GeLU |
+|6.| Kernel Dimensions | [11, 9, 7, 5, 3], [5, 5, 5, 5, 5], [3, 3, 3, 3, 3] |
+|7.| Use Batch Normalization | True, False |
+|8.| Maximum Training Epochs | 5, 8, 10 |
+|9.| Dropout Probability | 0.3, 0.2, 0.1 |
+|10.| Hidden Layer Size | 128, 256, 512 |
+
+- Note: I have used Adamax optimizer for the above experiments
 
 ###  Code for Part A
 

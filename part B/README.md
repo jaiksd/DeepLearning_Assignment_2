@@ -1,7 +1,7 @@
 
 ### Code for Part B
 
-The experiments on Part B can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-B.ipynb).
+The experiments on Part B can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part%20B/Part_B_CS23M030.ipynb).
 
 ## Evaluation file for part B([PartB_cmd.py](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/PartB_cmd.py))
 Please follow the instructions of Part A, for loading dataset.
@@ -27,5 +27,5 @@ run this file as :
   and you can add proper arguments to be passed
 
 ## Author
-[Shreyash Gadgil](https://github.com/jaiksd)
+[Jai Kishan Dewangan](https://github.com/jaiksd)
 CS23M030

@@ -3,7 +3,7 @@
 
 The experiments on Part B can be found [here](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part%20B/Part_B_CS23M030.ipynb).
 
-## Evaluation file for part B([PartB_cmd.py](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/PartB_cmd.py))
+## Evaluation file for part B([PartB_cmd.py](https://github.com/jaiksd/DeepLearning_Assignment_2/blob/main/part%20B/train_b.py))
 Please follow the instructions of Part A, for loading dataset.
 And run the following command in the command line(this will take the default arguments).
 ```
